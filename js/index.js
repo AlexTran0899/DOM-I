@@ -69,6 +69,9 @@ DomIsAwesome.textContent = "DOM is awesome";
 const button = document.querySelector("button")
 button.textContent = "Get Started";
 
+const topImage = document.getElementById("cta-img")
+topImage.setAttribute('src', "img/header-img.png")
+
 const middleImage = document.getElementById("middle-img")
 middleImage.setAttribute('src', "img/mid-page-accent.jpg")
 
