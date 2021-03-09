@@ -45,49 +45,51 @@ const links = document.querySelectorAll("nav a")
 
 //sevices
 
-links[0].textContent= "Services"
-links[0].href = `#`;
+links[0].textContent= siteContent['nav']["nav-item-1"]
 //product
-links[1].textContent = "Product";
-links[1].href = `#`;
+links[1].textContent = siteContent['nav']["nav-item-2"]
 //vision 
-links[2].textContent = "Vision";
-links[2].href = `#`;
+links[2].textContent = siteContent['nav']["nav-item-3"]
 //Features 
-links[3].textContent = "Features";
-links[3].href = `#`;
+links[3].textContent = siteContent['nav']["nav-item-4"]
 //About
-links[4].textContent = "About";
-links[4].href = `#`;
+links[4].textContent = siteContent['nav']["nav-item-5"]
 //Contact
-links[5].textContent = "Contact";
-links[5].href = `#`;
+links[5].textContent = siteContent['nav']["nav-item-6"]
 
 const DomIsAwesome = document.querySelector("h1")
-DomIsAwesome.textContent = "DOM is awesome";
+DomIsAwesome.innerHTML =  siteContent["cta"]["h1"].split(" ").join("<br>");
+// DomIsAwesome.textContent = "dom"
+// const ctatx= document.querySelector(".cta-text");
+// const crt1 = document.createElement("h1")
+// ctatx.appendChild(crt1);
+// crt1.textContent = "isawesome"
+
+
+
 
 const button = document.querySelector("button")
 button.textContent = "Get Started";
 
 const topImage = document.getElementById("cta-img")
-topImage.setAttribute('src', "img/header-img.png")
+topImage.setAttribute('src', siteContent["cta"]["img-src"])
 
 const middleImage = document.getElementById("middle-img")
-middleImage.setAttribute('src', "img/mid-page-accent.jpg")
+middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 const h4Stuff = document.querySelectorAll("h4")
 const pstuff = document.querySelectorAll("p")
-h4Stuff[0].textContent= "Feature"
-h4Stuff[1].textContent= "About"
-h4Stuff[2].textContent= "Services"
-h4Stuff[3].textContent= "Product"
-h4Stuff[4].textContent= "Vision"
+h4Stuff[0].textContent= siteContent['main-content']["features-h4"]
+h4Stuff[1].textContent= siteContent['main-content']["about-h4"]
+h4Stuff[2].textContent= siteContent['main-content']["services-h4"]
+h4Stuff[3].textContent= siteContent['main-content']["product-h4"]
+h4Stuff[4].textContent= siteContent['main-content']["vision-h4"]
 
-h4Stuff[0].nextElementSibling.textContent= "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-h4Stuff[1].nextElementSibling.textContent= 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
-h4Stuff[2].nextElementSibling.textContent= "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-h4Stuff[3].nextElementSibling.textContent=  "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-h4Stuff[4].nextElementSibling.textContent=  "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+h4Stuff[0].nextElementSibling.textContent= siteContent['main-content']['features-content']
+h4Stuff[1].nextElementSibling.textContent= siteContent['main-content']['about-content']
+h4Stuff[2].nextElementSibling.textContent= siteContent['main-content']['services-content']
+h4Stuff[3].nextElementSibling.textContent= siteContent['main-content']['product-content']
+h4Stuff[4].nextElementSibling.textContent= siteContent['main-content']['vision-content']
 
 h4Stuff[5].textContent= "Contact"
 
